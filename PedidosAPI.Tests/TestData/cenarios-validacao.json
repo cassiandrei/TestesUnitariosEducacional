@@ -1,0 +1,30 @@
+[
+  {
+    "nomeCliente": "",
+    "emailCliente": "teste@email.com",
+    "quantidade": 1,
+    "precoUnitario": 10.0,
+    "mensagemEsperada": "Nome do cliente é obrigatório"
+  },
+  {
+    "nomeCliente": "João Silva",
+    "emailCliente": "",
+    "quantidade": 1,
+    "precoUnitario": 10.0,
+    "mensagemEsperada": "Email do cliente é obrigatório"
+  },
+  {
+    "nomeCliente": "Maria Santos",
+    "emailCliente": "maria@email.com",
+    "quantidade": 0,
+    "precoUnitario": 10.0,
+    "mensagemEsperada": "Quantidade deve ser maior que zero"
+  },
+  {
+    "nomeCliente": "Pedro Lima",
+    "emailCliente": "pedro@email.com",
+    "quantidade": 1,
+    "precoUnitario": -5.0,
+    "mensagemEsperada": "Preço unitário deve ser maior que zero"
+  }
+]

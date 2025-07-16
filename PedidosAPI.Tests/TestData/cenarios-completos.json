@@ -1,0 +1,55 @@
+[
+  {
+    "nome": "Cenário: Pedido válido simples",
+    "dadosPedido": {
+      "nomeCliente": "João Silva",
+      "emailCliente": "joao@email.com",
+      "itens": [
+        {
+          "nomeProduto": "Notebook",
+          "quantidade": 1,
+          "precoUnitario": 2500.00
+        }
+      ]
+    },
+    "deveSerValido": true,
+    "valorTotalEsperado": 2500.00
+  },
+  {
+    "nome": "Cenário: Pedido com múltiplos itens",
+    "dadosPedido": {
+      "nomeCliente": "Maria Santos",
+      "emailCliente": "maria@email.com",
+      "itens": [
+        {
+          "nomeProduto": "Mouse",
+          "quantidade": 2,
+          "precoUnitario": 45.00
+        },
+        {
+          "nomeProduto": "Teclado",
+          "quantidade": 1,
+          "precoUnitario": 120.00
+        }
+      ]
+    },
+    "deveSerValido": true,
+    "valorTotalEsperado": 210.00
+  },
+  {
+    "nome": "Cenário: Cliente sem email",
+    "dadosPedido": {
+      "nomeCliente": "Pedro Lima",
+      "emailCliente": "",
+      "itens": [
+        {
+          "nomeProduto": "Monitor",
+          "quantidade": 1,
+          "precoUnitario": 800.00
+        }
+      ]
+    },
+    "deveSerValido": false,
+    "erroEsperado": "Email do cliente é obrigatório"
+  }
+]

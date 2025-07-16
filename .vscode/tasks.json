@@ -1,0 +1,53 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Solution",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build"
+			],
+			"group": "build",
+			"problemMatcher": [
+				"$msCompile"
+			]
+		},
+		{
+			"label": "Run API",
+			"command": "dotnet",
+			"type": "shell",
+			"args": ["run"],
+			"options": {
+				"cwd": "${workspaceFolder}/PedidosAPI.Api"
+			},
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": ["$msCompile"]
+		},
+		{
+			"label": "Run Tests",
+			"command": "dotnet",
+			"type": "shell",
+			"args": ["test"],
+			"group": "test",
+			"problemMatcher": ["$msCompile"]
+		},
+		{
+			"label": "Run Tests with Coverage",
+			"command": "dotnet",
+			"type": "shell",
+			"args": ["test", "--collect:\"XPlat Code Coverage\""],
+			"group": "test",
+			"problemMatcher": ["$msCompile"]
+		},
+		{
+			"label": "Clean Solution",
+			"command": "dotnet",
+			"type": "shell",
+			"args": ["clean"],
+			"group": "build",
+			"problemMatcher": ["$msCompile"]
+		}
+	]
+}
